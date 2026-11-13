@@ -1,0 +1,128 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+  color: #333;
+}
+
+.container {
+  max-width: 950px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+header {
+  background: #1e40af;
+  color: white;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+header h1 {
+  margin: 0 0 10px;
+}
+
+header p {
+  margin: 0;
+  color: #dbeafe;
+}
+
+.panel,
+.card {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+.panel h2 {
+  margin-top: 0;
+  color: #1e40af;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 6px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+input {
+  width: 100%;
+  padding: 11px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 22px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.6;
+}
+
+button:hover:not(:disabled) {
+  background: #1d4ed8;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.card h3 {
+  color: #64748b;
+  font-size: 15px;
+}
+
+.card h2 {
+  color: #2563eb;
+  font-size: 28px;
+}
+
+.card p {
+  color: #64748b;
+}
+
+li {
+  margin: 12px 0;
+  color: #475569;
+}
+
+.recommendation {
+  background: #eff6ff;
+}
+
+.error {
+  color: red;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #888;
+  font-size: 13px;
+}
+
+@media (max-width: 600px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    padding: 12px;
+  }
+}
